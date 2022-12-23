@@ -1,0 +1,12 @@
+import { Component } from "@angular/core";
+import { SuperUiService } from "super-ui";
+
+@Component({
+  selector: "<%= dasharize(name) %>",
+  template: ` <p><%= dasharize(name) %> works!</p> `,
+  styles: [],
+})
+export class <%= classify(name) %>Component {
+
+    constructor(private superUiService: SuperUiService) {}
+}

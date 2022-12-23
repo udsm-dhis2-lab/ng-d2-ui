@@ -1,0 +1,17 @@
+{
+    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add": {
+            "description": "Add super library to project",
+            "factory": "./ng-add/index#ngAdd"
+        },
+        "super-ui-component": {
+            "description": "This schematic generates super component",
+            "factory": "./super-ui-component/index#superUiComponentGenerator",
+            "schema": "./super-ui-component/schema.json",
+            "aliases": [
+                "suc"
+            ]
+        }
+    }
+}
